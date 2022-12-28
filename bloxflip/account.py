@@ -13,4 +13,7 @@ class Account:
     def __init__(self, info: dict) -> None:
         self.balance = info["wallet"]
         self.username = info["robloxUsername"]
+        self.roblox_id = info["robloxId"]
+        self.total_wagered = info["wager"]
+        self.total_deposited = info["totalDeposited"]
         self.game = GameStats(info=info)
